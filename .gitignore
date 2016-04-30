@@ -34,5 +34,5 @@ bower_components
 .DS_Store
 
 # Commented code 
-example.js 
+!example.js 
 
