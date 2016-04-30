@@ -5,7 +5,7 @@
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
 
 exports.elizaInitials = [
-	"How do you do.  Please tell me your problem.",
+	"How do you do.",
 // additions (not original)
 	"Please tell me what's been bothering you.",
 	"Is something troubling you ?"
@@ -68,8 +68,11 @@ exports.elizaSynons = {
 	"desire": ["want", "need"],
 	"everyone": ["everybody", "nobody", "noone"],
 	"family": ["mother", "mom", "father", "dad", "sister", "brother", "wife", "children", "child"],
-	"happy": ["elated", "glad", "better"],
-	"sad": ["unhappy", "depressed", "sick"]
+	"happy": ["elated", "glad", "better", "excited"],
+	"sad": ["unhappy", "depressed", "sick","mad","angry","pissed","depressed"],
+    "no": ["nope", "nah"],
+    "yes": ["yeah","ya","yep","yup"],
+    "fuck": ["fucker","shit","damn","shut up","bitch"]
 };
 
 exports.elizaKeywords = [
@@ -230,8 +233,8 @@ exports.elizaKeywords = [
 	]],
 	["hello", 0, [
 		["*", [
-			"How do you do.  Please state your problem.",
-			"Hi.  What seems to be your problem ?"
+			"How do you do.",
+			"Hi."
 		]]
 	]],
 	["computer", 50, [
@@ -593,6 +596,16 @@ exports.elizaKeywords = [
 			"What do you suppose that disparity means ?",
 			"Could there be some connection, do you suppose ?",
 			"How ?"
+		]]
+	]],
+    ["fuck", 0, [
+		["*", [
+			"Does it make you feel strong to use that kind of language?",
+            "Are you venting your feelings now?",
+            "Are you angry?",
+            "Does this topic make you feel angry?",
+            "Is something making you feel angry?",
+            "Does using that kind of language make you feel better?"
 		]]
 	]]
 
