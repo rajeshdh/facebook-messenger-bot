@@ -33,4 +33,6 @@ bower_components
 *.iml
 .DS_Store
 
+# Commented code 
+example.js 
 
