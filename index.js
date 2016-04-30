@@ -19,11 +19,7 @@ app.get('/', function (req, res) {
     res.send('This is TestBot Server');
 });
 
-app.get('/test/:text', function (req, res) {
-    var text = req.params.text;
-    var answer = analyseMessage(text);
-    res.json({'ans': answer});
-});
+
 // Facebook Webhook
 app.get('/webhook', function (req, res) {
     if (req.query['hub.verify_token'] === 'testbot_verify_token') {
@@ -40,7 +36,7 @@ app.post('/webhook', function (req, res) {
         var event = events[i];
         if (event.message && event.message.text) {
             // get reply from eliza 
-            var reply = eliza.transform(text);
+            var reply = eliza.transform(event.message.text);
 
             sendMessage(event.sender.id, {text: reply});
     
