@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
-var knowledgeBase = require('./knowledgeBase');
+
 var ElizaBot = require('./elizabot');
 
 var app = express();
